@@ -34,7 +34,7 @@ public class RegisterController {
 			BeanUtils.copyProperties(registerDTO, newRegister);
 			// Quando  autenticação estiver funcionando, pega-se o usuario autenticado
 			UserEntity user = userService.findALL().get(0); 
-	
+	  //TODO FALTA CHAMAR METODO CAMADA SERVICE
 		}
 		
 		
