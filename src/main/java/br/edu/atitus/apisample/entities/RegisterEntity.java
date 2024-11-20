@@ -30,7 +30,7 @@ private double latitude;
 private double longitude;
 
 @Column(length = 500)
-private double description;
+private String description;
 
 public UUID getId() {
 	return id;
@@ -64,11 +64,11 @@ public void setLongitude(double longitude) {
 	this.longitude = longitude;
 }
 
-public double getDescription() {
+public String getDescription() {
 	return description;
 }
 
-public void setDescription(double description) {
+public void setDescription(String description) {
 	this.description = description;
 }
 

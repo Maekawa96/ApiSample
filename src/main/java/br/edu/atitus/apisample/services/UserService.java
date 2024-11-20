@@ -1,5 +1,6 @@
 package br.edu.atitus.apisample.services;
 
+import java.util.List;
 import java.util.regex.Pattern;
 import org.springframework.stereotype.Service;
 import br.edu.atitus.apisample.entities.UserEntity;
@@ -48,5 +49,9 @@ public class UserService {
         this.repository.save(newUser);
         
         return newUser;
+    }
+    
+    public List<UserEntity> findALL() throws Exception{
+    	return repository.findAll();
     }
 }
