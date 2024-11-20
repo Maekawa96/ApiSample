@@ -95,5 +95,4 @@ public class RegisterController {
 		return ResponseEntity.badRequest().body(menssage);
 		}
 		
-		
 }
